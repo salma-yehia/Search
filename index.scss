@@ -1,0 +1,43 @@
+%message{
+    height: 40px;
+}
+$color : black;
+
+.search , .Google , #Advanced{
+    text-align: center;
+}
+.border{
+    border-radius: 25px;
+    width: 50%; 
+    height: 40px;
+}
+button , input{
+    border: none;
+    @extend %message;
+    margin-top: 30px;
+}
+button a{   
+    color: $color;
+}
+button a:hover {
+    text-decoration: none;
+    color: $color;
+}
+img{
+    margin-top: 25%;
+}
+button{
+    margin-left: 10px;
+}
+.find{
+    border: 1px solid $color;
+    @extend %message;
+}
+.center{
+    padding-top: 27px;
+}
+@media(max-width:600px){
+    .border{
+        width: 80%;
+    }
+}
